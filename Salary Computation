@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner n=new Scanner(System.in);
+        int a=n.nextInt();
+        if (a<=15000){
+            double hra=0.15*a;
+            double da=0.9*a;
+            double t=a+hra+da;
+            System.out.printf("%.2f\n",t);
+        }else{
+            double hra=5000;
+            double da=0.98*a;
+            double t=a+hra+da;
+            System.out.printf("%.2f\n",t);
+        }
+    }//
+}
