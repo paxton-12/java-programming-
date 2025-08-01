@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+          Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int[] arr=new int[n];
+        for (int i=0;i<n;i++){
+            arr[i]=s.nextInt();
+        }
+        int in=-1;
+        int tar=s.nextInt();
+        for(int i=0;i<n;i++){
+            if(arr[i]==tar){
+                in=i;
+                break;
+            }
+        }
+        if (in == -1){
+            System.out.println("-1");
+        } else {
+            System.out.printf("Door Number is %03d-DN\n", in);   
+        }
+    }
+}
